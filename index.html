@@ -3,69 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>
-    <style>
-      * {
-        /*Aplicar em todos os elementos*/
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        line-height: 1.5;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      p {
-        color: #242424;
-        font-size: 16px;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-weight: bold;
-        color: #00ff00;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      .container {
-        padding-left: 20%;
-        padding-right: 20%;
-      }
-
-      .card{
-        padding: 15px;
-        border: 1px solid #111111;
-        border-radius: 15px;
-        margin: 10px auto;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-      }
-
-      .tamanho-50{
-        max-width: 49%;
-        width: 49%;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/colors.css">
   </head>
   <body>
+    <header>
+      <!--Podemos usar variáveis no CSS inline-->
+      <h1 style="color: var(--secondary-color)">Bem-Vindo ao meu Site!</h1>
+    </header>
+
     <div class="container">
-      <h1 style="color: #ff0000">Fatec Jahu - CSS Inline</h1>
+      <h1 class="text-red">Fatec Jahu - CSS Inline</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        dolor, aliquid eos ut illo, nesciunt aspernatur minus quibusdam sequi
-        possimus quasi voluptas saepe suscipit alias error magnam repudiandae
-        natus! Molestias?
+        Lorem ipsum dolor sit <span class="text-blue text-bold">amet consectetur adipisicing</span> 
+        elit. Repellendus dolor, aliquid eos ut illo, nesciunt aspernatur minus quibusdam sequi
+        possimus quasi voluptas saepe suscipit alias error magnam repudiandae natus! Molestias?
       </p>
       <div class="card tamanho-50">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sapiente 
+        <span class="text-30">L</span>orem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat sapiente 
         iste consequatur quod, accusamus velit. Ut explicabo aliquid sequi optio 
         officiis, saepe facere iusto blanditiis consectetur est beatae provident. 
       </div>
       <div class="card tamanho-50">
         dkkmdfkmfdkmfskfm dffmdlsfmldfs fslfsdlfm mdmflsfmlsfm mrmfemferf fmoefmeofm
       </div>
+      <button class="button tex-bold" type="button">PASSE O MOUSE</button>
     </div>
+
+    <footer>
+      <p>&copy;2024 Fatec Jahu. Todos os direitos reservados.</p>
+      <p>Desenvolvido por Arthur Bello Ghilardi</p>
+    </footer>
   </body>
 </html>

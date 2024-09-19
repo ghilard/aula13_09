@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+
+*{
+    font-family: "Sofadi One", system-ui;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.text-red{
+    color: red;
+}
+
+.text-blue{
+    color: blue;
+}
+
+.text-green{
+    color: green;
+}
+
+.text-30{
+    font-size: 30px;
+}
